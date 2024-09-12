@@ -129,3 +129,132 @@ greeting();
 function greeting () {
     console.log('Hello World!')
 }
+
+// JS Function -> A block of reusable codes designed to perform certain tasks, it is executed when called or invoked.
+
+function name() {
+    statement;
+}
+
+// Types Of JS Functions
+
+// Function Declaration
+
+function multiply (number) {
+    return number * number
+}
+
+const answer = multiply(5);       //Function declaration with an argument/something in the parameter
+console.log(answer);        //One Params
+
+function sum () {                //Function declaration with no argument/nothing in the parameter
+    return 9 + 5
+}
+
+console.log(sum());
+
+
+function subtraction (a,b) {                    //Function declaration with two arguments/things in the parameter                   //Two Params
+    return a - b
+}
+const subResult = subtraction(5, 4);
+console.log(subResult);
+
+// Assigning value to param
+
+function division (g, h = 7) {
+    return g / h
+}
+console.log(division(21));
+
+// Function Expression
+
+const greeTing = function sayHello(name) {       //Expressing a function through a variable
+    console.log(`Hello ${name}`);
+}
+greeTing('Rodiyat');
+
+const myNumber = function addNumber(s, t) {
+    return 2 + 3
+}
+console.log(myNumber());
+
+// Arrow Function 
+
+const arrow = (x) => x * x - 6;     // First Method
+console.log(arrow(4));
+
+const example2 = (tutor, student) => {
+    const tutorOne = 'Abdullah';
+    const tutorTwo = 'Abdullah';
+
+    const studentOne = 'Opera';
+    const studentTwo = 'Opera';
+
+    return console.log(`Mr ${tutorOne} is today's tutor, while ${studentOne} is part of the cohorts`);
+};
+example2();
+
+// Global Scope
+
+const scope = 2;
+
+const testScope = () => {
+    const k = 10;
+    console.log(scope + k);
+}
+testScope();
+
+
+let num = 5
+
+const testNum = () => {
+    console.log(num);
+    num = 10
+}
+
+testNum()
+console.log(num);
+
+
+// Local Scope
+
+function localScope () {
+    const name = 'OG';
+    const potBellied = 'is Pot Bellied';
+    const isPresent = '✅';
+
+    console.log(name, potBellied, isPresent);
+}
+localScope()
+
+const aFunctionn = () => {
+    const name = 'Yemi'
+    console.log(name);
+    
+    const anotherFunction2 = () => {
+        const age = 2
+        console.log(age);
+    }
+    anotherFunction2();
+     
+}
+aFunctionn();
+
+// Hoisting
+
+hoistedFunction()
+
+function hoistedFunction () {
+    console.log('I am hoisted');
+}
+
+console.log(myHoistedFn(2, 5));
+
+function myHoistedFn(a, b) {
+    return a-b;
+}
+
+// Closure
+
+
